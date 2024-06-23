@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    /* background-image: url("https://content.r9cdn.net/rimg/dimg/38/93/de70f3b4-city-20339-551a6f73.jpg?crop=true&width=1020&height=498"); */
+    background-image: url("../images/carrossel.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+form {
+    align-items: center;
+    background: aqua transparent;
+    backdrop-filter: blur(5px);
+    border: 1px solid;
+    border-radius: 10px;
+    box-shadow: 0 8px 32px 0 aquamarine;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 400px;
+    margin: 200px auto;
+    -webkit-backdrop-filter: blur(4px);
+    width: 300px;
+}
+
+form h1 {
+    color: whitesmoke;
+}
+
+input {
+    width: 250px;
+    border-radius: 15px;
+    padding: 12px;
+}
+
+button {
+    width: 90px;
+    height: 50px;
+    background-color: transparent;
+    color: whitesmoke;
+    border-color: blue;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+label {
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+#popup {
+    display: none;
+    text-align: center;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    font-weight: bold;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+#closePopup {
+    background-color: blue;
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 500;
+}
