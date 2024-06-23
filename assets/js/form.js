@@ -9,7 +9,7 @@ document.getElementById('formulario_cadastro').addEventListener('submit', async 
         const email = document.getElementById('email').value
 
         const registeredUser = {
-            senha: password,
+            senha: senha,
             email: email
         }
 
@@ -20,7 +20,7 @@ document.getElementById('formulario_cadastro').addEventListener('submit', async 
         document.getElementById('closePopup').addEventListener('click', function() {
             document.getElementById('popup').style.display = 'none'
             document.getElementById('overlay').style.display = 'none'
-            window.location.href = '../index.html'
+            window.location.href = '../../index.html'
         })
     } catch (error) {
         alert(error.message)
