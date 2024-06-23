@@ -20,7 +20,7 @@ document.getElementById('formulario_cadastro').addEventListener('submit', async 
         document.getElementById('closePopup').addEventListener('click', function() {
             document.getElementById('popup').style.display = 'none'
             document.getElementById('overlay').style.display = 'none'
-            window.location.href = '../../HYPNIX/index.html'
+            window.location.href = '../HYPNIX/index.html'
         })
     } catch (error) {
         alert(error.message)
